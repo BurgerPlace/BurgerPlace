@@ -20,7 +20,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
-    NgModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
