@@ -3,6 +3,7 @@
   position: fixed;
   height: 100vh;
   width: 100vw;
+  z-index: -10;
   background-color: #e8e6e7;
 }
 .nav {
@@ -13,9 +14,39 @@
 
 .picsum-img-wrapper {
   width: 100vw;
-  height: 30rem;
+  height: 40rem;
   background-color: red;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  filter: blur(4px);
+}
+
+.slogan {
+  position: absolute;
+  z-index: 1;
+  top: 20rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-shadow: 5px 5px $ketchup;
+  h1 {
+    color: $secondary;
+    font-weight: 900;
+    font-size: 10rem;
+  }
+  h2 {
+    margin-top: 6rem;
+    color: $bbq;
+    font-weight: 900;
+    font-size: 10rem;
+  }
+}
+.features {
+  margin-top: 5rem;
+  .panel {
+    background-color: white;
+    width: 8rem;
+    height: 10rem;
+  }
 }
