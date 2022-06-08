@@ -1,4 +1,4 @@
-@import '../themes.scss';
+@import "../themes.scss";
 #bg {
   position: fixed;
   height: 100vh;
@@ -27,19 +27,21 @@
 .slogan {
   position: absolute;
   z-index: 1;
-  top: 20rem;
+  top: 12rem;
   width: 100%;
   height: 100%;
   text-align: center;
   text-shadow: 5px 5px $ketchup;
   h1 {
     color: $secondary;
+    line-height: 8rem;
     font-weight: 900;
     font-size: 10rem;
   }
   h2 {
-    margin-top: 6rem;
+    margin-top: 4rem;
     color: $bbq;
+    line-height: 2rem;
     font-weight: 900;
     font-size: 10rem;
   }
@@ -85,7 +87,8 @@
     font-weight: bolder;
     text-align: center;
     font-size: 7rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    line-height: 6rem;
   }
 }
 
@@ -127,6 +130,9 @@
       display: flex;
       flex-direction: column;
     }
+    .product-card:hover {
+      transform: scale(1.1);
+    }
   }
   button {
     margin-left: auto;
@@ -136,10 +142,148 @@
     border: none;
     color: white;
   }
+  button:hover {
+    background-color: $bbq;
+  }
   .center {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
   }
+}
+.deliver-info {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      float: left;
+      width: 30%;
+      height: 50%;
+    }
+    .text {
+      height: 50%;
+      width: 50%;
+      float: right;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      b {
+        font-size: 2.5rem;
+        line-height: normal;
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: normal;
+      }
+      span {
+        font-size: 1rem;
+        line-height: normal;
+        font-weight: bold;
+        color: $bbq;
+      }
+      button {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 50%;
+        background-color: $ketchup;
+        border: none;
+        color: white;
+      }
+      button:hover {
+        background-color: $bbq;
+      }
+    }
+  }
+}
+.contact {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-top: -2rem;
+  justify-content: space-between;
+  h3 {
+    font-weight: bolder;
+    font-size: 3rem;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  p {
+    color: $bbq;
+    font-weight: bold;
+  }
+  .l {
+    form {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      input {
+        background: none;
+        border: none;
+        border-bottom: 0.2rem solid rgb(50, 50, 50);
+        margin-bottom: 0.5rem;
+      }
+      textarea {
+        background: none;
+        border: none;
+        border-bottom: 0.2rem solid rgb(50, 50, 50);
+        margin-bottom: 0.5rem;
+      }
+      button {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        width: 50%;
+        background-color: $ketchup;
+        border: none;
+        color: white;
+      }
+      button:hover {
+        background-color: $bbq;
+      }
+    }
+  }
+  .r {
+    p {
+      color: inherit;
+      font-weight: inherit;
+      font-size: 1.2rem;
+    }
+    span {
+      color: inherit;
+      font-weight: inherit;
+      font-size: 1.2rem;
+    }
+    a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: $bbq;
+    }
+    div {
+      margin-bottom: 2rem;
+    }
+  }
+}
+footer {
+  width: 100%;
+  padding-top: 3rem;
+  clear: both;
+  text-align: center;
+  padding-bottom: 1rem;
 }
