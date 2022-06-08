@@ -1,35 +1,50 @@
-<app-navbar class="navigation"></app-navbar>
 <div id="bg"></div>
+<app-navbar class="navigation"></app-navbar>
 <div class="slogan">
   <h1>BEST BURGERS</h1>
   <h2>IN TOWN</h2>
 </div>
-<ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+<ngb-carousel
+  [showNavigationArrows]="showNavigationArrows"
+  [showNavigationIndicators]="showNavigationIndicators"
+>
   <ng-template ngbSlide *ngFor="let image of images">
-    <div class="picsum-img-wrapper" style="background-image: url({{image}});">
-    </div>
+    <div
+      class="picsum-img-wrapper"
+      style="background-image: url({{image}});"
+    ></div>
   </ng-template>
-  </ngb-carousel>
+</ngb-carousel>
 
-<div class="container-flex features">
-<div class="panel">
-  <img src="assets/other/util/shop_online.svg" alt="Order">
-  <b>Order online</b>
-  <p>We deliver within a radius 6 km from the premises.</p>
-  <p>The minimum order amount is 30 PLN.</p>
-  <span>Free delivery over 100 PLN.</span>
+<div class="features">
+  <div class="panel">
+    <img src="assets/other/util/shop_online.svg" alt="Order" />
+    <b>Order online</b>
+    <p>We deliver within a radius 6 km from the premises.</p>
+    <p>The minimum order amount is 30 PLN.</p>
+    <span>Free delivery over 100 PLN.</span>
+  </div>
+  <div class="panel">
+    <img src="assets/other/util/delivery.svg" alt="Order" />
+    <b>Delivery</b>
+    <p>Fast delivery of all burgers.</p>
+    <p>Provided to you by.</p>
+    <span>BOLT® and GLOVO®.</span>
+  </div>
+  <div class="panel">
+    <img src="assets/other/util/shopping_bag.svg" alt="Order" />
+    <b>Pickup</b>
+    <p>
+      Pay conveniently with the transaction without cash or cash on delivery.
+    </p>
+    <span>Bon Appetit!</span>
+  </div>
 </div>
-<div class="panel">
-  <img src="assets/other/util/delivery.svg" alt="Order">
-  <b>Delivery</b>
-  <p>Fast delivery of all burgers.</p>
-  <p>Provided to you by.</p>
-  <span>BOLT® and GLOVO®.</span>
+<!-- MAIN -->
+<div class="info mt-4">
+  <h2>DAILY FRESH</h2>
+  <h2>GROUND BEED</h2>
 </div>
-<div class="panel">
-  <img src="assets/other/util/shopping_bag.svg" alt="Order">
-  <b>Pickup</b>
-  <p>Pay conveniently with the transaction without cash or cash on delivery.</p>
-  <span>Bon Appetit!</span>
-</div>
+<div class="container-xl burgers-display">
+  <h3>DISCOVER OUR PRODUCTS</h3>
 </div>
