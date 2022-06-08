@@ -95,7 +95,51 @@
   h3 {
     text-align: center;
     padding: 3rem;
+    padding-bottom: 2rem;
     font-weight: bolder;
     font-size: 3rem;
+  }
+  .cards {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    .product-card {
+      border-radius: 10px;
+      .spans {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+      span {
+        text-align: center;
+        font-size: 2rem;
+        width: 100%;
+        line-height: 1.8rem;
+        font-weight: bolder;
+        color: white;
+      }
+      img {
+        padding: 1rem;
+      }
+      width: 30%;
+      height: 25%;
+      background-color: $bbq;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: $ketchup;
+    border: none;
+    color: white;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
   }
 }
